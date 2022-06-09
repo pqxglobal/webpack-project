@@ -10,7 +10,7 @@ const App = () => {
         <section>
           <h1>Industrial Technology</h1>
         </section>
-        <img src={spool} alt="spool" width="250" />
+        <img class="spool" src={spool} alt="spool" width="250" />
         <Recipes />
       </main>    
     </>

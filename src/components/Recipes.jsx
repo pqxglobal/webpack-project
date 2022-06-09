@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Level = {
-    Communication: 1,
-    ProcessTemp: 130,
+  Communication: 1,
+  ProcessTemp: 130,
 };
 
 const Flow = {
@@ -11,21 +11,24 @@ const Flow = {
 };
 
 const Recipes = () => {
-    const [recipe, setRecipe] = useState({});
-    return (
-        <div>
-            <h3>Current Measurement:</h3>
-            <button onClick={() => setRecipe(Level)}>Level Measurement</button>
-            <button onClick={() => setRecipe(Flow)}>Flow Measurement</button>
-            <ul>
-                {Object.keys(recipe).map((material) => (
-                    <li key={material}>
-                        {material}: {recipe[material]}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+  const [recipe, setRecipe] = useState({});
+  return (
+    <div>
+      <h3>Measurements:</h3>
+      <div class="buttons">
+        <button onClick={() => setRecipe(Level)}>Level Measurement</button>
+        <button onClick={() => setRecipe(Flow)}>Flow Measurement</button>
+      </div>
+
+      <ul>
+        {Object.keys(recipe).map((material) => (
+          <li key={material}>
+            {material}: {recipe[material]}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Recipes;

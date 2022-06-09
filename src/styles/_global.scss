@@ -1,10 +1,10 @@
-@use "variables";
+@use "colors";
 
 body {
     margin: 0;
-    background-color: variables.$bg;
-    color: purple;
-    font-size: 100px;
+    background-color: colors.$khaki-web;
+    color: colors.$black-chocolate;
+    font-size: 80px;
 }
 
 main {
@@ -15,8 +15,33 @@ main {
 
 button {
     font-size: 1.5rem;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: colors.$shadow-blue;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 ul {
     list-style-image: url("../images/logopqx32x32.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        font-size: 46px;
+        padding-left: 10px;
+    }
+}
+
+img.spool {
+    transform: scale(1.5);
 }

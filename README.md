@@ -2,4 +2,4 @@
 # Webpack Practice Project
 > This repo contains code for the Webpack practice project.</br>
 > This is a bare Webpack project with minor modifications for practicing purposes</br>
-> You can see the result here: https://pqx-industrial-technology.netlify.app/
+> You can see the result here: https://pqxglobal-webpack-project.netlify.app/
